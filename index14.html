@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vighnesh</title>
+    <link rel="stylesheet" href="basic14.css">
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <div id="percent"></div>
+    <section>
+        <h2>Creative Scroll Progress Bar</h2>
+    <p>
+        A server is a computer or system that provides resources, data, services, or programs to other computers, known as clients, over a network. In theory, whenever computers share resources with client machines they are considered as servers. There are many types of servers, including web servers, mail servers, and virtual servers. Broadly the servers are divided into two types and those are local and remote servers. A local server is again a computer that serves a client within the local network or LAN. That means that in most cases it will not be connected to the internet or if it does it will be protected with a password so not everybody can access its services. But when it comes to a remote server, a client has to send the request of the webpage which it has to access to which the server responds. <br><br>
+        A server is a computer or system that provides resources, data, services, or programs to other computers, known as clients, over a network. In theory, whenever computers share resources with client machines they are considered as servers. There are many types of servers, including web servers, mail servers, and virtual servers. Broadly the servers are divided into two types and those are local and remote servers. A local server is again a computer that serves a client within the local network or LAN. That means that in most cases it will not be connected to the internet or if it does it will be protected with a password so not everybody can access its services. But when it comes to a remote server, a client has to send the request of the webpage which it has to access to which the server responds. <br><br>
+        A server is a computer or system that provides resources, data, services, or programs to other computers, known as clients, over a network. In theory, whenever computers share resources with client machines they are considered as servers. There are many types of servers, including web servers, mail servers, and virtual servers. Broadly the servers are divided into two types and those are local and remote servers. A local server is again a computer that serves a client within the local network or LAN. That means that in most cases it will not be connected to the internet or if it does it will be protected with a password so not everybody can access its services. But when it comes to a remote server, a client has to send the request of the webpage which it has to access to which the server responds. <br><br>
+        A server is a computer or system that provides resources, data, services, or programs to other computers, known as clients, over a network. In theory, whenever computers share resources with client machines they are considered as servers. There are many types of servers, including web servers, mail servers, and virtual servers. Broadly the servers are divided into two types and those are local and remote servers. A local server is again a computer that serves a client within the local network or LAN. That means that in most cases it will not be connected to the internet or if it does it will be protected with a password so not everybody can access its services. But when it comes to a remote server, a client has to send the request of the webpage which it has to access to which the server responds. <br><br>   
+    </p>
+    </section>
+    <script type="text/javascript">
+    var percent = document.getElementById("progressbar");
+    var percent = document.getElementById("percent");
+    var totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+        var progress = (window.pageYOffset / totalHeight)* 100;
+        progressbar.style.height = progress + "%";
+        percent.innerHTML = "Page Scrolled " + Math.round(progress) + "%"
+    }
+    </script>
+</body>
+</html>

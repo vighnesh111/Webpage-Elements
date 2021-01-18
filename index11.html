@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vighnesh</title>
+    <link rel="stylesheet" href="basic11.css">
+</head>
+<body background="sasuke.jpg">
+   <header>
+       <a href="#" class="logo">WEBSITE</a>
+       <ul>
+           <li><a href="#">HOME</a></li>
+           <li><a href="#">ABOUT</a></li>
+           <li><a href="#">SERVICES</a></li>
+           <li><a href="#">PORTFOLIO</a></li>
+           <li><a href="#">TEAM</a></li>
+           <li><a href="#">CONTACT</a></li>
+       </ul>
+       <section class="banner"></section>
+       <script type="text/javascript">
+       window.addEventListener("scroll", function(){
+           var header = document.querySelector("header");
+           header.classList.toggle("sticky", window.scrollY > 0);
+       })
+
+       </script>
+   </header>
+</body>
+</html>
